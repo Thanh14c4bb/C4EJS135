@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(217, 240, 233);
+    
+}
+.img {
+    object-fit: cover;
+}
+h1:hover {
+    color: royalblue;
+}
+.sex:hover {
+    color: royalblue;
+}
+.addreess:hover {
+    color: royalblue;
+}
