@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(217, 240, 233);
+    
+}
+.img {
+    object-fit: cover;
+}
+input:hover {
+    color: royalblue;
+}
+.sex:hover {
+    color: royalblue;
+}
+.addreess:hover {
+    color: royalblue;
+}
+.check1:checked + .check2{
+    color: brown;
+}
+.check3 {
+    display: none;
+}

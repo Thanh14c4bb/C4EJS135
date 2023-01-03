@@ -1,12 +1,21 @@
-
+body {
+    margin: 0px 20px 20px 20px;   
+}
 .card {
-   margin: 20px;
+    
     background-color: aquamarine;
 }
-h1:hover {
+h1 {
     color: red;
 }
-h3 ::selection {
+.img {
+    padding-bottom: 20px;
+    border-bottom: 4px dashed black;
+}
+h3:hover {
+    color: blue;
+}
+.skills ::selection {
     color: brown;
     background-color: white;
 }
