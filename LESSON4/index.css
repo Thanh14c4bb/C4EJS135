@@ -4,6 +4,9 @@
     max-width: 1500px;
     box-sizing: border-box;
 }
+.container {
+    margin: 0 auto;
+}
             /* Header */
 header {
     display: flex;
@@ -30,25 +33,26 @@ header {
 .header-right span {
     margin: 0 10px;
 }
-.header-right:hover span {
+.header-right-hover:hover {
     color: blueviolet;
 }
 
         /* logo */
 .logo {
-    height: 730px;
+    height: 630px;
     width: 1440px;
+    box-sizing: border-box;
 }
 .Content {
     position: relative;
     width: 1140px;
-    height: 642px;
+    height: 542px;
     margin: 0 auto;
 }
 .img-human {
     position: absolute;
-    width: 426px;
-    height: 642px;
+    /* width: 380px;
+    height: 242px; */
     margin: 20px -50px 20px 650px;
 }
 .info {
@@ -89,6 +93,12 @@ h3 {
     text-decoration: none;
     color: wheat;
 }
+.view-my-work:hover{
+    border: 1px solid black;
+    background-color: white;
+    transform: scale(1.02);
+    color: #754ef9;
+}
 .icon {
     /* padding-top: ; */
     padding-left: 200px;
@@ -97,6 +107,9 @@ h3 {
     background-color: azure;
     display: flex;
     /* justify-content: space-between; */
+}
+.facebook1:hover {
+    transform: scale(1.05);
 }
 .icon i {
     font-size: 20px;
@@ -113,7 +126,8 @@ h3 {
 
             /* CSS about me */
 .About-me {
-    height: 666px;
+    box-sizing: border-box;
+    height: 400px;
 
 }
 .about {
@@ -132,13 +146,15 @@ h3 {
 }
 .contac1 {
     /* position: relative; */
-    width: 540px;
+    width: 440px;
     height: 281px;
-    margin-left: 100px;
-    padding-top: 50px;
+    margin-left: 150px;
+    padding-top: 30px;
     
 }
 .contac1 p {
+    position: relative;
+    display: flex;
     margin-top: 13px;
     color: #8a8fa3;
 }
@@ -149,6 +165,297 @@ h3 {
     width: 540px;
     height: 66px;
     font-size: 16px;
-    
 }
 
+.chart {
+    box-sizing: border-boxs;
+    width: 450px;
+    height: 281px;
+    margin-left: 600px;
+    margin-top: -200px;
+}
+
+.chart-html{
+    width: 200px;
+    height: 80px;
+}
+
+.chart-html-line {
+    margin-top: 10px;
+    width: 450px;
+    height: 5px;
+    background-color: #7881a7;
+}
+.chart-css {
+    
+    margin-top: -40px;
+    width: 440px;
+    height: 80px;
+}
+.chart-css-line {
+    margin-top: 10px;
+    width: 450px;
+    height: 5px;
+    background-color: #7881a7;
+}
+.chart-photoshop {
+    margin-top: -40px;
+    width: 440px;
+    height: 80px;
+    
+}
+.chart-photoshop-line {
+    margin-top: 10px;
+    width: 450px;
+    height: 5px;
+    background-color: #7881a7;
+}
+.chart-sketch { 
+    margin-top: -40px;
+    width: 440px;
+    height: 80px;
+}
+.chart-sketch-line {
+    margin-top: 10px;
+    width: 450px;
+    height: 5px;
+    background-color: #7881a7;
+}
+
+    /* This is My Service */
+.My-services {
+    padding-top: 10px;
+    width: 1140px;
+    height: 730px;
+}
+h2 {
+    font-size: 40px;
+}
+.My-services-content {
+    margin-left: 400px;
+    width: 750px;
+    height: 160px;
+    text-align: center;
+    font-size: 14px;
+}
+.My-services-content p {
+    color: #8a8fa3;
+    margin-top: 10px;
+}
+.box {
+    box-sizing: border-box;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    margin-left: 150px;
+}
+.box p {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #8a8fa3;
+}
+.box h4 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.box i {
+    color: #754ef9;
+    font-size: 60px;
+}
+.Web-Design {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.Web-Design:hover {
+    transform: scale(0.99);
+}
+.Graphic-Design {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.Graphic-Design:hover {
+    transform: scale(0.99);
+}
+.App-Design {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.App-Design:hover {
+    transform: scale(0.99);
+}
+.Illustration-Design {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.Illustration-Design:hover {
+    transform: scale(0.99);
+}
+.Web-Development {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.Web-Development:hover {
+    transform: scale(0.99);
+}
+.Consultancy-and-Support {
+    padding: 28px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.Consultancy-and-Support:hover {
+    transform: scale(0.99);
+}
+    /* This is CSS Have any project */
+    .Have-any {
+        position: relative;
+        background-image: url(https://preview.uideck.com/items/unfold/assets/images/call-to-action.jpg);
+        /* background-color: #754ef9; */
+        position: relative;
+        width: 1550px;
+        height: 385px;
+        font-weight: 400;
+
+    }
+    /* .backgroung-have-any::before {
+        content:'';
+        position: absolute;
+        background-color: #aca6be;
+        width: 1350px;
+        height: 485px;
+        overflow: hidden;
+    } */
+    .Have-any-project {
+        /* position: relative; */
+        margin-left: 350px;
+        width: 750px;
+        height: 300px;
+        padding-top: 80px;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+    .Have-any-project p {
+        /* position: absolute; */
+        font-size: 16px;
+        padding: 50px;
+        text-align: center;
+    }
+    .button1 {
+        display: flex;
+        position: relative;
+        margin-left: 500px;
+        width: 250px;
+        height: 100px;
+        justify-content: space-between;
+    }
+    #Download-CV {
+        position: absolute;
+        padding-top: 15px;
+        text-align: center;
+    display: block;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 27px;
+    background: white;
+    }
+    #Download-CV:hover {
+        background-color: #754ef9;
+        transform: scale(0.9);
+    }
+    #HIRE-ME {
+        padding-top: 15px;
+        text-align: center;
+        position: absolute;
+        display: block;
+        width: 180px;
+        height: 50px;
+        text-decoration: none;
+        margin-left: 240px;
+        font-size: 15px;
+        border-radius: 27px;
+        background: #754ef9;
+        }
+        #HIRE-ME:hover{
+            background-color: #7881a7;
+            transform: scale(0.95);
+        }
+
+        /* This is My-Recent-Works */
+        .My-Recent-Works {
+            width: 760px;
+            height: 154px;
+            padding-top: 20px;
+            font-size: 25px;
+            color: black;
+        }
+        .My-Recent-Works p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #8a8fa3;
+        }
+        .card {
+            display: flex;
+            height: 850px;
+            width: 1200px;
+            justify-content: space-between;
+
+        }
+        .card1 {
+            width: 350px;
+            height: 350px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .card1 img {
+            border-radius: 10px;
+            /* margin-top: -35px; */
+            width: 345px;
+            height: 345px;
+        }
+        .card1-hover {
+            padding-top: 50px;
+            font-size: 50px;
+            display: none;
+            text-align: center;
+
+        }
+        .card1-hover:hover {
+            background-color: aqua;
+
+        }
