@@ -1,21 +1,26 @@
 * {
     margin: 0px;
     border: 0px;
-    max-width: 1500px;
+    /* max-width: 1440px; */
     box-sizing: border-box;
 }
 .container {
-    margin: 0 auto;
+    margin: 0px auto;
+    border: 0px;
+    max-width: 1440px;
 }
             /* Header */
 header {
+    position: fixed;
     display: flex;
     max-width: 1440px;
     height: 85px;
     background-color: azure;
     padding-top: 20px;
     color: #8a8fa3;
+    box-sizing: border-box;
 }
+
 .logox {
     width: 150px;
     height: 50px;
@@ -26,7 +31,7 @@ header {
     padding: 15px;
     width: 630px;
     height: 24px;
-    margin-left: 250px;
+    margin-left: 600px;
     margin-right: -30px;
     /* justify-content: space-around; */
 }
@@ -39,9 +44,11 @@ header {
 
         /* logo */
 .logo {
+    position: relative;
     height: 630px;
     width: 1440px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .Content {
     position: relative;
@@ -51,9 +58,9 @@ header {
 }
 .img-human {
     position: absolute;
-    /* width: 380px;
-    height: 242px; */
-    margin: 20px -50px 20px 650px;
+    width: 380px;
+    height: 242px;
+    margin: 100px -50px 20px 650px;
 }
 .info {
     position: absolute;
@@ -78,15 +85,15 @@ h3 {
     color: #8a8f;
 }
 .view-my-work {
-    padding-top: 17px;
-    padding-left: 29px;
+    padding-top: 15px;
     position: absolute;
     width: 180px;
     height: 50px;
     font-size: 15px;
     border-radius: 27px;
     background: #754ef9;
-    margin: 380px -300px 150px 100px;
+    margin-top: 50px;
+    text-align: center;
     
 }
 .view-my-work a {
@@ -148,7 +155,7 @@ h3 {
     /* position: relative; */
     width: 440px;
     height: 281px;
-    margin-left: 150px;
+    margin-left: 230px;
     padding-top: 30px;
     
 }
@@ -171,11 +178,12 @@ h3 {
     box-sizing: border-boxs;
     width: 450px;
     height: 281px;
-    margin-left: 600px;
+    margin-left: 550px;
     margin-top: -200px;
 }
 
 .chart-html{
+    position: relative;
     width: 200px;
     height: 80px;
 }
@@ -186,6 +194,7 @@ h3 {
     height: 5px;
     background-color: #7881a7;
 }
+
 .chart-css {
     
     margin-top: -40px;
