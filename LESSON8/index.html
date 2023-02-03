@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài 1: 
+
+        // Nhập vào tuổi và giới tính của một người để 
+        // đưa ra quyết định người đó có phải nhập ngũ 
+        // hay không biết rằng tuổi nhập ngũ từ  đủ 18-27 
+        // và giới tính nhập ngũ là Nam
+
+        // let age = prompt ('Nhập vào số tuổi của bạn');
+        // let sex = prompt ('Nhập giới tính của bạn');
+        // if (age<18||age>27) {
+        //     alert('Bạn không phải đi nghĩa vụ quân sự');
+        // }
+        // else if (sex=='nữ'||sex=='Nữ'||sex=='NỮ') {
+        //     alert('Bạn không phải đi nghĩa vụ quân sự');
+        // }
+        // else {
+        //     alert ('Bạn phải đi nghĩa vụ quân sự')
+        // }
+
+        // Bài 2: 
+
+        // Viết một đoạn code thực hiện tính thuế thu nhập cá nhân 
+        // của một người biết rằng:
+
+        // 1. 11 triệu đầu tiên của lương không phải chịu thuế
+        // 2. Với mỗi 5 triệu tiếp theo phải chịu tương ứng 5%, 10%, 
+        // 15%, 20% ~ 35% thuế. (Mức thuế cao nhất phải chịu là 35%)
+        // 3. Sau khi tính được khoản thuế phải đóng, hãy tính phần 
+        // lương còn lại sau khi đóng thuế.
+        
+        // let a = prompt ('Nhập số tiền lương bất kỳ');
+        // if (a<1) {
+        //     alert('Số tiền lương nhập không hợp lệ');
+        // } else {
+        //     if (a<=11) {
+        //         let tex = 0;
+        //         let salary = a;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=16) {
+        //         tex = a*0.05;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=21) {
+        //         tex = 5*0.05 + (a-21)*0.1;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=26) {
+        //         tex = 5*0.05 + 5*0.1+ (a-26)*0.15;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=31) {
+        //         tex = 5*0.05 + 5*0.1+ 5*0.15+(a-31)*0.20;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=36) {
+        //         tex = 5*0.05 + 5*0.1+ 5*0.15+ 5*0.20+(a-36)*0.25;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=41) {
+        //         tex = 5*0.05 + 5*0.1+ 5*0.15+ 5*0.20+5*0.25+(a-41)*0.3;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else if (a<=46) {
+        //         tex = 5*0.05 + 5*0.1+ 5*0.15+ 5*0.20+5*0.25+5+0.30+(a-46)*0.35;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     } else {
+        //         tex = 5*0.05 + 5*0.1+ 5*0.15+ 5*0.20+5*0.25+5+0.30+(a-46)*0.35;
+        //         salary = a - tex;
+        //         alert(`Mức thuế bạn phải đóng là: ${tex};
+        //         Tiền lương của bạn là: ${salary}`);
+        //     }
+        // }
+        
+        // Bài 3: 
+
+        // Input: Ngày / tháng sinh của một người bất kỳ.
+        // Output: Cung hoàng đạo của người đó
+
+        let day = prompt ('Nhập ngày sinh');
+        let month = prompt ('Nhập tháng sinh');
+                if ((month==1 && day>=20)|| (month==2 && day <=18) ) {
+                    alert('Cung bảo bình');
+                } else if ((month==2 && day>=19)|| (month==3 && day <=20)) {
+                    alert('Cung song ngư');
+                } else if ((month==3 && day>=21)|| (month==4 && day <=19)) {
+                    alert('Cung bạch dương');
+                } else if ((month==4 && day>=20)|| (month==5 && day <=20)) {
+                    alert('Cung kim ngưu');
+                } else if ((month==5 && day>=21)|| (month==6 && day <=21)) {
+                    alert('Cung song tử');
+                } else if ((month==6 && day>=22)|| (month==7 && day <=22)) {
+                    alert('Cung cự giải');
+                } else if ((month==7 && day>=23)|| (month==8 && day <=22)) {
+                    alert('Cung sư tử');
+                } else if ((month==8 && day>=23)|| (month==9 && day <=22)) {
+                    alert('Cung xử nữ');
+                } else if ((month==9 && day>=23)|| (month==10 && day <=23)) {
+                    alert('Cung thiên bình');
+                } else if ((month==10 && day>=24)|| (month==11 && day <=21)) {
+                    alert('Cung hổ cáp');
+                } else if ((month==11 && day>=22)|| (month==12 && day <=21)) {
+                    alert('Cung nhân mã');
+                } else {
+                    alert('Cung ma kết');
+                    
+                }
+                
+    </script>
+</body>
+</html>
