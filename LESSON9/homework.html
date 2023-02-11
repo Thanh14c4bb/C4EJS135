@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                                       
+                        // Bài tap:
+
+function check (student) {
+    let temp = 5;
+    let studentName=[];
+    for (let i= 0; i<student.length;i++) {
+        if (student[i].score>temp && student[i].name.includes('a'))  {
+            studentName.push(student[i].name.replace('a','b'));
+            studentName.push(student[i].score);   
+        }    
+    }
+    return studentName;
+}
+
+function checkup (student) {
+    let temp;
+    let flag;
+    for (let i= 0; i<student.length;i++) {
+        for (j=i+1;j<student.length;j++) {
+            if (student[i].score>student[j].score) {
+                // key score
+                temp = student[j].score;  
+                student[j].score = student[i].score; 
+                student[i].score = temp;
+                // key name
+                flag = student[j].name;  
+                student[j].name = student[i].name; 
+                student[i].name = flag;
+            } 
+        }
+    }
+    return student;
+}
+let student = [
+    {name: 'nam', score:3},
+    {name: 'tom', score:7.2},
+    {name: 'hai', score:6},
+    {name: 'tran', score:8.5},
+    {name: 'tam', score:9},
+    {name: 'truc', score:5},
+    {name: 'thuy', score:8},
+]
+
+
+console.log(check(student));
+console.log(checkup(student));
+
+    </script>
+</body>
+</html>
