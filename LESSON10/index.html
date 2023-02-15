@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bai1 {
+            margin-top:100px;
+            margin-left: 750px;
+        }
+        .bai2 {
+            margin-top:50px;
+            margin-left: 750px;
+        }
+        .bai3 {
+            position: relative;
+            margin-top: -400px;
+            width: 700px;
+            height: 250px;
+            background-color: rgb(103, 172, 150);
+        }
+        .left p{
+            padding-top: 30px;
+            
+        }
+        .center {
+            
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            
+        }
+        .center input {
+            display: block;
+            margin-top: 40px;
+            width: 250px;
+            height: 30px;
+        }
+        .right {
+            position: absolute;
+            top: 50px;
+            left: 500px;
+        }
+        .right input {
+            display: block;
+            margin-top: 10px;
+        }
+        .right button {
+            margin-top: 30px;
+            width: 60px;
+            height: 40px;
+            border: 1px solid black;
+            background-color: salmon;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bai1">
+        <h1>Hoc javascript that don gian</h1>
+        <img id="Turn_on" src="./pic_bulboff.gif" alt="">
+        <button onclick="on()" >Turn on</button>
+        <button onclick="off()" id="Turn_off">Turn of</button>
+    </div>
+
+    <div class="bai2">
+        <button id="hide" onclick="login()">Dang ky khoa hoc</button>
+        <p id="change">Khóa học chưa được đăng ký</p>
+    </div>
+
+    <div class="bai3">
+        <div class="left">
+            <p>Nhập số thứ nhất</p>
+            <p>Nhập số thứ hai</p>
+            <p>Kết quả</p>
+        </div>
+        <div class="center">
+            <input id="first" type="text">
+            <input id="second" type="text">
+            <input id="result" type="text">
+        </div>
+        <div class="right">
+            <select id="operator">
+                <option value="sum">CỘNG</option>
+                <option value="minus">TRỪ</option>
+                <option value="multiply">NHÂN</option>
+                <option value="divide">CHIA</option> 
+            </select>
+            
+            
+            <button onclick="caculator()" id="result">Tính</button>
+        </div>
+    </div>
+    <script>
+        // bai 1
+        function on() {
+                document.getElementById('Turn_on').src = "./pic_bulbon.gif";
+            }
+        function off() {
+                document.getElementById('Turn_on').src = "./pic_bulboff.gif";
+            }
+            // bai 2
+        function login() {
+                const text = 'Chuc mung ban da dang ky khoa hoc thanh cong';
+                document.getElementById('change').innerText = text;
+                document.getElementById('change').style.color = 'red';
+                document.getElementById('hide').disabled = true;
+                
+            }
+        // Bai 5
+            function caculator() {
+                const first = document.getElementById('first').value;
+                const second = document.getElementById('second').value;
+                const operator = document.getElementById('operator').value;
+                let result = 0;
+                if ( operator== 'sum') {
+                     result = parseInt(first)+ parseInt(second);
+                } else if (operator == 'minus'){
+                    result = parseInt(first)- parseInt(second);
+                } else if (operator == 'multiply'){
+                    result = parseInt(first)* parseInt(second);
+                } else if (operator == 'divide'){
+                    result = parseInt(first) / parseInt(second);
+                }
+                
+
+                document.getElementById('result').value = result;
+            }
+
+    </script> 
+</body>
+</html>
