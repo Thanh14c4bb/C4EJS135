@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(159, 238, 212);
+        margin: 100 auto;
+      }
+      span {
+        margin-right: 50px;
+        font-size: 30px;
+      }
+      .content {
+        position: relative;
+        top: 80px;
+        left: 150px;
+      }
+      
+      button {
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 150px;
+        height: 50px;
+      }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="content">
+          <span>So a:</span>
+        <input type="number" name="" id="number1"> <br>
+        <span>So b:</span>
+        <input type="number" id="number2"> <br>
+        <span>Ket qua:</span>
+        <input type="number" name="" id="number3" disabled> <br>
+        </div>
+        
+        <button type="button" onclick="result()">Tinh</button>
+    </form>
+
+    
+</body>
+<script>
+    
+function result() {
+  let number1 = parseInt(document.getElementById('number1').value);
+  let number2 = parseInt(document.getElementById('number2').value);
+  let snt = [];
+  for (let i = number1; i <= number2; i++) {
+    let check = true;
+    if (i > 1 && number1<number2) {
+      for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+          check = false;
+          break;
+        }
+      }
+      if (check) {
+        snt.push(i);
+      }
+    }
+  }
+  let sum = 0;
+  for (let k = 0; k < snt.length; k++) {
+    sum += snt[k];
+  }
+  document.getElementById('number3').value = sum;
+}
+</script>
+</html>

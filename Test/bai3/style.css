@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #df6c6c; */
+    
+}
+.container {
+    position: relative;
+    width: 1213px;
+    height: 830px;
+    margin: 173px 194px 197px 193px;
+    /* background-color: white; */
+}
+header {
+    width: 1013px;
+    height: 128px;
+    /* border: 10px solid black; */
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+
+}
+.headerLogo {
+    position: relative;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151B32;
+}
+nav {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    display: flex;
+    padding-bottom: 0px;
+}
+.navbar-button {
+    width: 327px;
+    height: 64px;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.navbar-button span {
+    position: relative;
+    margin-left: 17.3px;
+}
+.navbar-button i {
+    position: relative;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.navbar-menu a{
+    text-decoration: none;
+    margin-right: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151B32;
+}
+.newuser {
+    display: inline-block;
+    padding: 16px;
+gap: 8px;
+    width: 115px;
+    height: 56px;
+    background-color: #849FFF;
+    border-radius: 8px;
+}
+/* hero */
+.hero {
+    width: 1013px;
+    height: 432px;
+}
+.hero-Card {
+    width: 100%;
+    height: 208px;
+    display: flex;
+    justify-content:space-between
+
+}
+.heroCard1 {
+    position: relative;
+    top: 298px;
+    left: 100px;
+    width: 327px;
+    height: 100%;
+    border-radius: 16px;
+    /* background: red; */
+    
+}
+.heroCard1 img {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 97px;
+    height: 97px;
+}
+.heroconten1 {
+    margin-top: -94px;
+    margin-left: 137px;
+    width: 125px;
+    height: 106px;
+    background: #FBFCFF;
+border-radius: 16px;
+}
+.heroconten1 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten1 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten1 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.heroconten2 {
+    margin-top: -94px;
+    margin-left: 137px;
+    width: 125px;
+    height: 106px;
+    background: #FBFCFF;
+border-radius: 16px;
+}
+.heroconten2 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten2 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten2 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.heroconten3 {
+    margin-top: -94px;
+    margin-left: 130px;
+    width: 166px;
+    height: 132px;
+    background: #FBFCFF;
+    border-radius: 16px;
+}
+.heroconten3 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten3 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten3 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+
+
+
+.hero-Card2 {
+    width: 100%;
+    height: 208px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.heroCard2 {
+    position: relative;
+    top: 298px;
+    left: 100px;
+    width: 327px;
+    height: 100%;
+    border-radius: 16px;
+    /* background: red; */
+    
+}
+.heroCard2 img {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 97px;
+    height: 97px;
+}
+.heroconten2 {
+    margin-top: -94px;
+    margin-left: 137px;
+    width: 125px;
+    height: 106px;
+    background: #FBFCFF;
+border-radius: 16px;
+}
+.heroconten2 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten1 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten1 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.heroconten2 {
+    margin-top: -94px;
+    margin-left: 137px;
+    width: 125px;
+    height: 106px;
+    background: #FBFCFF;
+border-radius: 16px;
+}
+.heroconten2 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten2 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten2 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.heroconten3 {
+    margin-top: -94px;
+    margin-left: 130px;
+    width: 166px;
+    height: 132px;
+    background: #FBFCFF;
+    border-radius: 16px;
+}
+.heroconten3 h3 {
+    color: #151B32;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.heroconten3 span {
+    color: #151B32;
+    margin-top: -4px;
+    font-size: 18px;
+}
+.heroconten3 button {
+    text-align: center;
+    margin-right: 4px;
+    padding-top: -2px;
+    width: 56px;
+    height: 22px;
+    color: #516FD4;
+    margin-top: 18px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
