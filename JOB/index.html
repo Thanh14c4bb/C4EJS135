@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Food</title>
+    <script src="https://kit.fontawesome.com/b7bf668b0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <a href="./index.html">Food & Drinks</a>
+            </div>
+            <div class="header-button-search">
+                <input oninput="search()" class="button-search" type="text" name="" id="search">
+                <button class="button-search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+            
+            <div class="header-menu">
+                <li class="header-menu-order" onclick="showCart()"><a href="#"><img src="./img/img header/order-icon.png" 
+                    alt=""> <br> <span>Order</span> </a></li>
+                <li class="header-menu-account" onclick="change()"><a href="javascript:void(0);"><img src="./img/img header/account-icon.png" 
+                    alt=""> <br> <span >Account</span> </a></li>
+                <!-- <li class="header-menu-cart" onclick="order()">
+                    <a href="#"><img src="./img/img header/cart-icon.png" 
+                    alt=""> <br> 
+                    <span>Cart</span> </a>
+                </li> -->
+            </div>
+            
+        </header>
+        <ul id="search-results"></ul>
+        <ul id="product-list"></ul>
+        <ul class="cart-list"></ul>
+
+        <!-- Login -->
+        <div class="header-login" id="login">
+            <form action="">
+                <h3>Login</h3>
+                <p>Email:</p>
+                <input id="emaillogin" type="email" autocomplete="username">
+                <p>Password:</p>
+                <input id="pwlogin" type="password"autocomplete="current-password"> <br>
+                <button onclick="checklogin()">Login</button>
+                <a href="javascript:void(0);" onclick="signup()">Sign Up</a>
+            </form>
+        </div>
+        <!-- Sign Up -->
+        <div id="signup" class="header-signup">
+            <form action="">
+                <h3>Sign Up</h3>
+                <p>Email:</p>
+                <input id="emailsignup" type="email"autocomplete="username">
+                <p>Password:</p>
+                <input id="pwsignup" type="password" > <br>
+                <p>Confirm password:</p>
+                <input id="cfpassword" type="password" > <br>
+                <button onclick="link_home()">Sign Up</button>
+                <a href="javascript:void(0);" onclick="login()">Login</a>
+            </form>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-menu hide" id="navbars">
+                <a href="./index.html" class="active">Home</a>
+                <a>Introdece</a>
+                <a>Gifts 08/03</a>
+                <a>Promotions</a>
+                <a>Delicious cake every day</a>
+                <a>Cake recipe</a>
+                <a>Baking category</a>
+                <a>Contact</a>
+            </div>    
+        </nav>
+        <main id="hide">
+            <!-- Menu -->
+            <div class="menu">
+                <h2 class="menu-product">PRODUCT PORTFOLIO</h2>
+                <li class="menu-option"><img src="./img/img menu/bonus.png" alt=""> Summary of promotions</li>
+                <li class="menu-option"><img src="./img/img menu/Cake Collection.jpg" alt=""> Cake Collection</li>
+                <li class="menu-option"><img src="./img/img menu/Chocolate cake.jpg" alt=""> Chocolate cake</li>
+                <li class="menu-option"><img src="./img/img menu/Mose Cake.jpg" alt=""> Mose Cake</li>
+                <li class="menu-option"><img src="./img/img menu/Bread.jpg" alt=""> Bread</li>
+                <li class="menu-option"><img src="./img/img menu/cream.jpg" alt=""> Cream</li>
+                <li class="menu-option"><img src="./img/img menu/cur tards cake.jpg" alt=""> Curtard Cake</li>
+                <li class="menu-option"><img src="./img/img menu/coffe.png" alt=""> Coffee</li>
+                <li class="menu-option"><img src="./img/img menu/Matcha.jpg" alt=""> Matcha</li>
+                <li class="menu-option"><img src="./img/img menu/tea.png" alt=""> Tea</li>
+            </div>
+
+            <!-- slide -->
+            <div class="slide">
+                <div class="slide-prive">
+                    <button class="slide-priv-icon" onclick="slide_priv()"><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+                <div class="slide1">
+                    <img id="slide1" src="./img/img slider/slide1.png" alt="">
+                </div>
+                <div class="slide-next">
+                    <button class="slide-next-icon" onclick="slide_next()"><i class="fa-solid fa-chevron-right"></i></i></button>
+                </div>
+            </div>
+            <!-- cake -->
+            <div class="cake-container">
+                <div class="cake-info">
+                    <span>Hot products</span>
+                </div>
+                <div class="cake-img" id="cake">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerInfo">
+                <h3>Food & Drinks</h3>
+                <p><i class="fa-solid fa-location-dot"></i>
+                    Address: 150/8 Nguyen Duy Cung, Ward 12, Ho Chi Minh City
+                </p>
+                <p><i class="fa-solid fa-phone-flip"></i>
+                    Phone number: 19006750
+                </p>
+                <p><i class="fa-regular fa-envelope"></i>
+                    Email: support@live.vn
+                </p>
+            </div>
+            <div class="footerSupport">
+                <h3>Customer support</h3>
+                <p>About us</p>
+                <p>Shop system</p>
+                <p>Call to order</p>
+                <p>Sales policy</p>
+            </div>
+            <div class="payment">
+                <h3>Payment methods</h3>
+                <div class="paymenImg">
+                    <img src="./img/img footer/visa.jpg" alt="">
+                    <img src="./img/img footer/paypal.png" alt="">
+                    <img src="./img/img footer/master card.png" alt="">
+                </div> 
+                
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+"></script>
+<script src="./script.js"></script>
+</html>
